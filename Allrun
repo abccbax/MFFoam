@@ -1,0 +1,17 @@
+#!/bin/sh
+. $WM_PROJECT_DIR/bin/tools/RunFunctions
+
+# Get application name
+application=$(getApplication)
+
+cp -R 0.orig 0
+
+runApplication blockMesh
+
+runApplication setFields
+
+runApplication renumberMesh -overwrite
+
+runApplication $application
+
+#------------------------------------------------------------------------------
