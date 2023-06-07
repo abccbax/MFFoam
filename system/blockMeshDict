@@ -49,10 +49,6 @@ blocks
     hex (6 7 11 10 14 15 19 18) (110 15 1) simpleGrading (1.5 1 1)
 );
 
-edges
-(
-);
-
 boundary
 (
     inlet
@@ -93,6 +89,15 @@ boundary
             (2 2 14 6)
         );
     }
+    axis
+    {
+        type empty;
+        faces
+        (
+            (0 1 1 0)
+            (2 3 3 2)
+        );
+    }
     back
     {
         type wedge;
@@ -117,10 +122,6 @@ boundary
             (14 15 19 18)
         );
     }
-);
-
-mergePatchPairs
-(
 );
 
 // ************************************************************************* //

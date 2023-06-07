@@ -93,8 +93,8 @@ PIMPLE
     nOuterCorrectors 3;
     nCorrectors      2;
     nNonOrthogonalCorrectors 1;
-    faceMomentum     no;
-    //correctPhi       no;
+    
+    correctPhi          yes;
 }
 
 relaxationFactors

@@ -20,4 +20,22 @@ limitp
     min        1e4;
 }
 
+limitTparticles
+{
+    type            limitTemperature;
+    selectionMode   all;
+    min             270;
+    max             4000;
+    phase           particles;
+}
+
+limitTair
+{
+    type            limitTemperature;
+    selectionMode   all;
+    min             270;
+    max             4000;
+    phase           air;
+}
+
 // ************************************************************************* //
