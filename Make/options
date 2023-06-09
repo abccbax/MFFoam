@@ -1,11 +1,9 @@
-multiphaseLib = $(FOAM_APP)/solvers/multiphase/multiphaseEulerFoam
-
 EXE_INC = \
-    -I${multiphaseLib}/include \
-    -I${multiphaseLib}/phaseSystems/lnInclude \
-    -I${multiphaseLib}/interfacialModels/lnInclude \
-    -I${multiphaseLib}/interfacialCompositionModels/lnInclude \
-    -I${multiphaseLib}/multiphaseEulerFoam/multiphaseSystems/lnInclude \
+    -I$(FOAM_APP)/solvers/multiphase/multiphaseEulerFoam/include \
+    -I$(FOAM_APP)/solvers/multiphase/multiphaseEulerFoam/phaseSystems/lnInclude \
+    -I$(FOAM_APP)/solvers/multiphase/multiphaseEulerFoam/interfacialModels/lnInclude \
+    -I$(FOAM_APP)/solvers/multiphase/multiphaseEulerFoam/interfacialCompositionModels/lnInclude \
+    -I$(FOAM_APP)/solvers/multiphase/multiphaseEulerFoam/multiphaseEulerFoam/multiphaseSystems/lnInclude \
     -I$(LIB_SRC)/physicalProperties/lnInclude \
     -I$(LIB_SRC)/thermophysicalModels/basic/lnInclude \
     -I$(LIB_SRC)/MomentumTransportModels/momentumTransportModels/lnInclude \
